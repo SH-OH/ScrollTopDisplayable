@@ -36,6 +36,8 @@ pod 'ScrollTopDisplayable'
 
 *OR*
 
+Update dependencies in Package.swift
+
 ```
 dependencies: [
     .package(url: "https://github.com/SH-OH/ScrollTopDisplayable.git", .upToNextMajor(from: "1.0.0"))
