@@ -3,7 +3,6 @@
 Follow the scroll to show or hide the view at the top.
 
 ## Usage
-***
 
 ```
 import UIKit
@@ -23,7 +22,6 @@ extension View: ScrollTopDisplayable {
 
 
 ## Installation
-***
 
 ### Cocoapods
 
