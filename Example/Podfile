@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ScrollTopDisplayable_Tests' do
+  pod 'ScrollTopDisplayable', :path => '../'
+  
+  
+end
