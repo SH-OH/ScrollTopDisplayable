@@ -1,7 +1,7 @@
 {
   "name": "ScrollTopDisplayable",
   "version": "1.0.0",
-  "summary": "A short description of ScrollTopDisplayable.",
+  "summary": "Follow the scroll to show or hide the view at the top.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/SH-OH/ScrollTopDisplayable",
   "license": {
