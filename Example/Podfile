@@ -1,6 +1,13 @@
 use_frameworks!
-target 'ScrollTopDisplayable_Tests' do
+
+platform :ios, '10.0'
+
+target 'ScrollTopDisplayable_Example' do
   pod 'ScrollTopDisplayable', :path => '../'
-  
-  
+
+  target 'ScrollTopDisplayable_Tests' do
+    inherit! :search_paths
+
+    
+  end
 end

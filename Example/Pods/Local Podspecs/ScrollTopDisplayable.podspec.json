@@ -17,6 +17,7 @@
   "platforms": {
     "ios": "11.0"
   },
-  "swift_version": "5.0",
-  "source_files": "Sources/**/*.swift"
+  "swift_versions": "5.0",
+  "source_files": "Sources/**/*.swift",
+  "swift_version": "5.0"
 }

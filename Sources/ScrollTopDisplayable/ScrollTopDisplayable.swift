@@ -15,7 +15,7 @@ public protocol ScrollTopDisplayable: UIView {
 	func syncPreviousFrameY()
 }
 
-extension ScrollTopDisplayable {
+public extension ScrollTopDisplayable {
 	
 	func didScroll(_ scrollView: UIScrollView) {
 		let lastContentOffsetY: CGFloat = getAssociatedObject(self, &sdScrollTopDisplayableLastContentOffsetY) ?? 0
@@ -35,10 +35,10 @@ extension ScrollTopDisplayable {
 		switch verticalDirection {
 		case .up:
 			guard contentOffsetY > 0 else { break }
-			 
-			if frame.origin.y > previousFrameY {
+			
+			if !previousFrameY.isZero, frame.origin.y > previousFrameY {
 				frame.origin.y = previousFrameY
-			}
+			}// 97 > 0 >>> y = 0
 			
 			frame.origin.y += diffY
 			

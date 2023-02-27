@@ -1,0 +1,6 @@
+framework module Pods_ScrollTopDisplayable_Example {
+  umbrella header "Pods-ScrollTopDisplayable_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - ScrollTopDisplayable (1.0.0)
+
+DEPENDENCIES:
+  - ScrollTopDisplayable (from `../`)
+
+EXTERNAL SOURCES:
+  ScrollTopDisplayable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ScrollTopDisplayable: 28626d1febb43458b73b179aa06018a28074bbe8
+
+PODFILE CHECKSUM: 0ef7f6c4ecb6f02ab1e8f827e04521178f479081
+
+COCOAPODS: 1.11.3

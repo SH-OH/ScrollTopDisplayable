@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		170E85FB48662936AC539F5BA6B63050 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7DD693D5EA7A1F1C4E134B8985C83E /* Utility.swift */; };
+		22E9E7E6595D95A7F566D5BE89776783 /* ScrollTopDisplayable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 432FC99EF79C61000748A26A1426403F /* ScrollTopDisplayable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28F7D9B48F3BA74E8AD1CB2D7A25D7C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2E9B9B6498CBD7C430D280D61597719C /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A36F9CFD5C6EBAD5D76DC04711F86 /* UIScrollView+Extension.swift */; };
+		330C34D12C6CF9CA99390FABD7BAA02D /* Pods-ScrollTopDisplayable_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 171AA5F0C7362561CD2633CC10188E48 /* Pods-ScrollTopDisplayable_Tests-dummy.m */; };
+		501EA6DB8D27A0F9A843411064CE6308 /* Pods-ScrollTopDisplayable_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9ADA233515CDEBB6E991833BEE8C729 /* Pods-ScrollTopDisplayable_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9852058AFE83F37D17DF35A15D9C159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AC0EC54CBEF91D270941E07399C3F589 /* Pods-ScrollTopDisplayable_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A812B1CD4DFE04BD511C8E04B5802AAB /* Pods-ScrollTopDisplayable_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C166D12D3B717B0709D972BE46F51562 /* ScrollTopDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE5C4F953D22217E21844D58B58643 /* ScrollTopDisplayable.swift */; };
+		C3F5B688151680963F33E734F5B3BE73 /* Pods-ScrollTopDisplayable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6CE8628C4E1AB1DB7C86769D3AC285F /* Pods-ScrollTopDisplayable_Example-dummy.m */; };
+		E87C3D8C48D69FAF47F9A9BBE2C96D24 /* ScrollTopDisplayable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1E1C0C9A3B8586FD09CAEFCACA9E1E /* ScrollTopDisplayable-dummy.m */; };
+		FD70D63DE658527F62DE9252F99105EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E171744240AF1D27C15673FCD2CB0A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 157C19628C55F1BACE3EBBC5B781013A;
+			remoteInfo = ScrollTopDisplayable;
+		};
+		9408D66153849A711159130C126B7B65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AFEAD5782476CC91555CAB65C7D0A29;
+			remoteInfo = "Pods-ScrollTopDisplayable_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D1E1C0C9A3B8586FD09CAEFCACA9E1E /* ScrollTopDisplayable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollTopDisplayable-dummy.m"; sourceTree = "<group>"; };
+		171AA5F0C7362561CD2633CC10188E48 /* Pods-ScrollTopDisplayable_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollTopDisplayable_Tests-dummy.m"; sourceTree = "<group>"; };
+		1BCE5C4F953D22217E21844D58B58643 /* ScrollTopDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollTopDisplayable.swift; path = Sources/ScrollTopDisplayable/ScrollTopDisplayable.swift; sourceTree = "<group>"; };
+		1FD7F0A345D76D20C50A9128043053D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		24896D8E27DB00D90D40149A7F69DE3B /* ScrollTopDisplayable.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ScrollTopDisplayable.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2659588DEFC32930BBF65F23FB8500FD /* Pods-ScrollTopDisplayable_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollTopDisplayable_Example-Info.plist"; sourceTree = "<group>"; };
+		3817F41DABB78214D23A304EC1D4975E /* ScrollTopDisplayable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollTopDisplayable; path = ScrollTopDisplayable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3824A5DD0BF98F3158934EF21E3C45BA /* Pods-ScrollTopDisplayable_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrollTopDisplayable_Tests.modulemap"; sourceTree = "<group>"; };
+		3AF777226AB454BBF8FA34B07D4A9579 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		432FC99EF79C61000748A26A1426403F /* ScrollTopDisplayable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollTopDisplayable-umbrella.h"; sourceTree = "<group>"; };
+		4D96F6E771793B2CF200D2F37458569B /* Pods-ScrollTopDisplayable_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollTopDisplayable_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4F105C8356F12C71A66977B6F4A21C1F /* Pods-ScrollTopDisplayable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollTopDisplayable_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		506F85358F75AAA321010B95CBDF9A59 /* Pods-ScrollTopDisplayable_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ScrollTopDisplayable_Example"; path = Pods_ScrollTopDisplayable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A35E42E5626FE7FB198626965658502 /* ScrollTopDisplayable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollTopDisplayable.release.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7F6C03361475950BED7F9C12C543C4D9 /* Pods-ScrollTopDisplayable_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollTopDisplayable_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		912A36F9CFD5C6EBAD5D76DC04711F86 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Extension.swift"; path = "Sources/ScrollTopDisplayable/UIScrollView+Extension.swift"; sourceTree = "<group>"; };
+		935318F323D5785D0A3F3542BF2FCA71 /* Pods-ScrollTopDisplayable_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ScrollTopDisplayable_Tests"; path = Pods_ScrollTopDisplayable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A812B1CD4DFE04BD511C8E04B5802AAB /* Pods-ScrollTopDisplayable_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollTopDisplayable_Example-umbrella.h"; sourceTree = "<group>"; };
+		A9ADA233515CDEBB6E991833BEE8C729 /* Pods-ScrollTopDisplayable_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollTopDisplayable_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A9D6FEF5A8608BB19E5EE7550CE57C9C /* ScrollTopDisplayable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollTopDisplayable.modulemap; sourceTree = "<group>"; };
+		AA7DD693D5EA7A1F1C4E134B8985C83E /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Sources/ScrollTopDisplayable/Utility.swift; sourceTree = "<group>"; };
+		C8D4A715931A047DECFF070FC2D852D7 /* Pods-ScrollTopDisplayable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollTopDisplayable_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CD6D8584DF1E781261AFA287421E9944 /* Pods-ScrollTopDisplayable_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollTopDisplayable_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CD82092F7BA50F77DED8742C5EAC7E95 /* ScrollTopDisplayable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollTopDisplayable.debug.xcconfig; sourceTree = "<group>"; };
+		D1F78EBD1B15B14AF9DCD3BCBA37D105 /* Pods-ScrollTopDisplayable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollTopDisplayable_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DB9FEC3C7C82E03EA86C42447EF1099D /* ScrollTopDisplayable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollTopDisplayable-prefix.pch"; sourceTree = "<group>"; };
+		DC671E6CED17C973B008A8545D784C42 /* Pods-ScrollTopDisplayable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrollTopDisplayable_Example.modulemap"; sourceTree = "<group>"; };
+		E6CE8628C4E1AB1DB7C86769D3AC285F /* Pods-ScrollTopDisplayable_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollTopDisplayable_Example-dummy.m"; sourceTree = "<group>"; };
+		E774456FF77AC808D2282CBA2F6FF76A /* Pods-ScrollTopDisplayable_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollTopDisplayable_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EDEF9914A53FB108B929DD34F02B8773 /* Pods-ScrollTopDisplayable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollTopDisplayable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3F18A89D1E63EF113D8002D81609279 /* Pods-ScrollTopDisplayable_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollTopDisplayable_Tests-Info.plist"; sourceTree = "<group>"; };
+		F5B7C8550246BC9221313EABEF68E2D8 /* ScrollTopDisplayable-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ScrollTopDisplayable-Info.plist"; sourceTree = "<group>"; };
+		FE2F7023A1DBCB91C6C63E26A1FF79F3 /* Pods-ScrollTopDisplayable_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollTopDisplayable_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D3AF7B4AB9DAD9B45B9D6F88475D7DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F7D9B48F3BA74E8AD1CB2D7A25D7C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0A1B1E6AD0E89F2FD56BFA17845AC58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD70D63DE658527F62DE9252F99105EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D3B98E80CE49FAC2B769794FFA6D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9852058AFE83F37D17DF35A15D9C159 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		086A2F0B0B522A45E3CA9F9134EC8A90 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9D6FEF5A8608BB19E5EE7550CE57C9C /* ScrollTopDisplayable.modulemap */,
+				0D1E1C0C9A3B8586FD09CAEFCACA9E1E /* ScrollTopDisplayable-dummy.m */,
+				F5B7C8550246BC9221313EABEF68E2D8 /* ScrollTopDisplayable-Info.plist */,
+				DB9FEC3C7C82E03EA86C42447EF1099D /* ScrollTopDisplayable-prefix.pch */,
+				432FC99EF79C61000748A26A1426403F /* ScrollTopDisplayable-umbrella.h */,
+				CD82092F7BA50F77DED8742C5EAC7E95 /* ScrollTopDisplayable.debug.xcconfig */,
+				5A35E42E5626FE7FB198626965658502 /* ScrollTopDisplayable.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ScrollTopDisplayable";
+			sourceTree = "<group>";
+		};
+		4633DC989CD0F1F775FC7BCEB72155DC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6E9C6595F3F079C81C64E5A118820AF /* Pods-ScrollTopDisplayable_Example */,
+				5A1CE6263DCC4F3EB62D379910B06A03 /* Pods-ScrollTopDisplayable_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		53D74D0D0D793BA8CBD9FEAA9203E5A0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1FD7F0A345D76D20C50A9128043053D3 /* LICENSE */,
+				3AF777226AB454BBF8FA34B07D4A9579 /* README.md */,
+				24896D8E27DB00D90D40149A7F69DE3B /* ScrollTopDisplayable.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5A1CE6263DCC4F3EB62D379910B06A03 /* Pods-ScrollTopDisplayable_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3824A5DD0BF98F3158934EF21E3C45BA /* Pods-ScrollTopDisplayable_Tests.modulemap */,
+				4D96F6E771793B2CF200D2F37458569B /* Pods-ScrollTopDisplayable_Tests-acknowledgements.markdown */,
+				FE2F7023A1DBCB91C6C63E26A1FF79F3 /* Pods-ScrollTopDisplayable_Tests-acknowledgements.plist */,
+				171AA5F0C7362561CD2633CC10188E48 /* Pods-ScrollTopDisplayable_Tests-dummy.m */,
+				F3F18A89D1E63EF113D8002D81609279 /* Pods-ScrollTopDisplayable_Tests-Info.plist */,
+				A9ADA233515CDEBB6E991833BEE8C729 /* Pods-ScrollTopDisplayable_Tests-umbrella.h */,
+				EDEF9914A53FB108B929DD34F02B8773 /* Pods-ScrollTopDisplayable_Tests.debug.xcconfig */,
+				4F105C8356F12C71A66977B6F4A21C1F /* Pods-ScrollTopDisplayable_Tests.release.xcconfig */,
+			);
+			name = "Pods-ScrollTopDisplayable_Tests";
+			path = "Target Support Files/Pods-ScrollTopDisplayable_Tests";
+			sourceTree = "<group>";
+		};
+		81699DAF6BB67B8B683148705A502FBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				506F85358F75AAA321010B95CBDF9A59 /* Pods-ScrollTopDisplayable_Example */,
+				935318F323D5785D0A3F3542BF2FCA71 /* Pods-ScrollTopDisplayable_Tests */,
+				3817F41DABB78214D23A304EC1D4975E /* ScrollTopDisplayable */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B27A93975796E2A3C79B94F419430287 /* ScrollTopDisplayable */ = {
+			isa = PBXGroup;
+			children = (
+				1BCE5C4F953D22217E21844D58B58643 /* ScrollTopDisplayable.swift */,
+				912A36F9CFD5C6EBAD5D76DC04711F86 /* UIScrollView+Extension.swift */,
+				AA7DD693D5EA7A1F1C4E134B8985C83E /* Utility.swift */,
+				53D74D0D0D793BA8CBD9FEAA9203E5A0 /* Pod */,
+				086A2F0B0B522A45E3CA9F9134EC8A90 /* Support Files */,
+			);
+			name = ScrollTopDisplayable;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				EBE365DFA51CD70FE2B4CD59808D95AF /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				81699DAF6BB67B8B683148705A502FBF /* Products */,
+				4633DC989CD0F1F775FC7BCEB72155DC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBE365DFA51CD70FE2B4CD59808D95AF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B27A93975796E2A3C79B94F419430287 /* ScrollTopDisplayable */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F6E9C6595F3F079C81C64E5A118820AF /* Pods-ScrollTopDisplayable_Example */ = {
+			isa = PBXGroup;
+			children = (
+				DC671E6CED17C973B008A8545D784C42 /* Pods-ScrollTopDisplayable_Example.modulemap */,
+				7F6C03361475950BED7F9C12C543C4D9 /* Pods-ScrollTopDisplayable_Example-acknowledgements.markdown */,
+				E774456FF77AC808D2282CBA2F6FF76A /* Pods-ScrollTopDisplayable_Example-acknowledgements.plist */,
+				E6CE8628C4E1AB1DB7C86769D3AC285F /* Pods-ScrollTopDisplayable_Example-dummy.m */,
+				CD6D8584DF1E781261AFA287421E9944 /* Pods-ScrollTopDisplayable_Example-frameworks.sh */,
+				2659588DEFC32930BBF65F23FB8500FD /* Pods-ScrollTopDisplayable_Example-Info.plist */,
+				A812B1CD4DFE04BD511C8E04B5802AAB /* Pods-ScrollTopDisplayable_Example-umbrella.h */,
+				D1F78EBD1B15B14AF9DCD3BCBA37D105 /* Pods-ScrollTopDisplayable_Example.debug.xcconfig */,
+				C8D4A715931A047DECFF070FC2D852D7 /* Pods-ScrollTopDisplayable_Example.release.xcconfig */,
+			);
+			name = "Pods-ScrollTopDisplayable_Example";
+			path = "Target Support Files/Pods-ScrollTopDisplayable_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4778DA975A9B995EB5FEDBCD0430B82F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501EA6DB8D27A0F9A843411064CE6308 /* Pods-ScrollTopDisplayable_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C03229639F4A92D88F0C03A1153418 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E9E7E6595D95A7F566D5BE89776783 /* ScrollTopDisplayable-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A1E79A946C50C6EAB73BF26737A83A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0EC54CBEF91D270941E07399C3F589 /* Pods-ScrollTopDisplayable_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		157C19628C55F1BACE3EBBC5B781013A /* ScrollTopDisplayable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 315075DCE2C53DDD06D997DD6CA6A23D /* Build configuration list for PBXNativeTarget "ScrollTopDisplayable" */;
+			buildPhases = (
+				67C03229639F4A92D88F0C03A1153418 /* Headers */,
+				024353AE0904D05CBFE242DDC951E326 /* Sources */,
+				B0A1B1E6AD0E89F2FD56BFA17845AC58 /* Frameworks */,
+				7F0F61E85E682755F1FD7560D5CD105C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollTopDisplayable;
+			productName = ScrollTopDisplayable;
+			productReference = 3817F41DABB78214D23A304EC1D4975E /* ScrollTopDisplayable */;
+			productType = "com.apple.product-type.framework";
+		};
+		61EA124BB7F371D60F705AD0EB57579C /* Pods-ScrollTopDisplayable_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8518566DD02E4F024CDAC9106C4AFC9 /* Build configuration list for PBXNativeTarget "Pods-ScrollTopDisplayable_Tests" */;
+			buildPhases = (
+				4778DA975A9B995EB5FEDBCD0430B82F /* Headers */,
+				BE5654276862FFDF1BDCBDBED8C9FF06 /* Sources */,
+				F9D3B98E80CE49FAC2B769794FFA6D81 /* Frameworks */,
+				D9A94A64517046935C528457CEEFD930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB2D6506E183CC51DF5BA002853731B /* PBXTargetDependency */,
+			);
+			name = "Pods-ScrollTopDisplayable_Tests";
+			productName = Pods_ScrollTopDisplayable_Tests;
+			productReference = 935318F323D5785D0A3F3542BF2FCA71 /* Pods-ScrollTopDisplayable_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		9AFEAD5782476CC91555CAB65C7D0A29 /* Pods-ScrollTopDisplayable_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47878B16103A3A760C6ADC5519D66283 /* Build configuration list for PBXNativeTarget "Pods-ScrollTopDisplayable_Example" */;
+			buildPhases = (
+				E6A1E79A946C50C6EAB73BF26737A83A /* Headers */,
+				19F89D99FBDF21072D533CFD8C637266 /* Sources */,
+				3D3AF7B4AB9DAD9B45B9D6F88475D7DD /* Frameworks */,
+				73C9FDE161E1C583EEAB23A7E105F269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3C924CA5FB2BA193A38628CD4A1196B /* PBXTargetDependency */,
+			);
+			name = "Pods-ScrollTopDisplayable_Example";
+			productName = Pods_ScrollTopDisplayable_Example;
+			productReference = 506F85358F75AAA321010B95CBDF9A59 /* Pods-ScrollTopDisplayable_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 81699DAF6BB67B8B683148705A502FBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AFEAD5782476CC91555CAB65C7D0A29 /* Pods-ScrollTopDisplayable_Example */,
+				61EA124BB7F371D60F705AD0EB57579C /* Pods-ScrollTopDisplayable_Tests */,
+				157C19628C55F1BACE3EBBC5B781013A /* ScrollTopDisplayable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73C9FDE161E1C583EEAB23A7E105F269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F0F61E85E682755F1FD7560D5CD105C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A94A64517046935C528457CEEFD930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		024353AE0904D05CBFE242DDC951E326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C166D12D3B717B0709D972BE46F51562 /* ScrollTopDisplayable.swift in Sources */,
+				E87C3D8C48D69FAF47F9A9BBE2C96D24 /* ScrollTopDisplayable-dummy.m in Sources */,
+				2E9B9B6498CBD7C430D280D61597719C /* UIScrollView+Extension.swift in Sources */,
+				170E85FB48662936AC539F5BA6B63050 /* Utility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F89D99FBDF21072D533CFD8C637266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F5B688151680963F33E734F5B3BE73 /* Pods-ScrollTopDisplayable_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5654276862FFDF1BDCBDBED8C9FF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330C34D12C6CF9CA99390FABD7BAA02D /* Pods-ScrollTopDisplayable_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BB2D6506E183CC51DF5BA002853731B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ScrollTopDisplayable_Example";
+			target = 9AFEAD5782476CC91555CAB65C7D0A29 /* Pods-ScrollTopDisplayable_Example */;
+			targetProxy = 9408D66153849A711159130C126B7B65 /* PBXContainerItemProxy */;
+		};
+		E3C924CA5FB2BA193A38628CD4A1196B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScrollTopDisplayable;
+			target = 157C19628C55F1BACE3EBBC5B781013A /* ScrollTopDisplayable */;
+			targetProxy = 3E171744240AF1D27C15673FCD2CB0A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		074AD67C553B245301F40DE280671180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F105C8356F12C71A66977B6F4A21C1F /* Pods-ScrollTopDisplayable_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScrollTopDisplayable_Tests/Pods-ScrollTopDisplayable_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScrollTopDisplayable_Tests/Pods-ScrollTopDisplayable_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		09B9B03D592E1908E12E583BA9105F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F78EBD1B15B14AF9DCD3BCBA37D105 /* Pods-ScrollTopDisplayable_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScrollTopDisplayable_Example/Pods-ScrollTopDisplayable_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScrollTopDisplayable_Example/Pods-ScrollTopDisplayable_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9ECB633A9506A142732C24ED08F225D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A35E42E5626FE7FB198626965658502 /* ScrollTopDisplayable.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollTopDisplayable/ScrollTopDisplayable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollTopDisplayable/ScrollTopDisplayable-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ScrollTopDisplayable/ScrollTopDisplayable.modulemap";
+				PRODUCT_MODULE_NAME = ScrollTopDisplayable;
+				PRODUCT_NAME = ScrollTopDisplayable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C2974E4BAB2C6D55FA0E742E4B69C472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD82092F7BA50F77DED8742C5EAC7E95 /* ScrollTopDisplayable.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollTopDisplayable/ScrollTopDisplayable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollTopDisplayable/ScrollTopDisplayable-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ScrollTopDisplayable/ScrollTopDisplayable.modulemap";
+				PRODUCT_MODULE_NAME = ScrollTopDisplayable;
+				PRODUCT_NAME = ScrollTopDisplayable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E29EC111FA64F2159F096E7152671F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D4A715931A047DECFF070FC2D852D7 /* Pods-ScrollTopDisplayable_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScrollTopDisplayable_Example/Pods-ScrollTopDisplayable_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScrollTopDisplayable_Example/Pods-ScrollTopDisplayable_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E45C09227F104DB2551CCE9C7D674B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDEF9914A53FB108B929DD34F02B8773 /* Pods-ScrollTopDisplayable_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScrollTopDisplayable_Tests/Pods-ScrollTopDisplayable_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScrollTopDisplayable_Tests/Pods-ScrollTopDisplayable_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		315075DCE2C53DDD06D997DD6CA6A23D /* Build configuration list for PBXNativeTarget "ScrollTopDisplayable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2974E4BAB2C6D55FA0E742E4B69C472 /* Debug */,
+				9ECB633A9506A142732C24ED08F225D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47878B16103A3A760C6ADC5519D66283 /* Build configuration list for PBXNativeTarget "Pods-ScrollTopDisplayable_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B9B03D592E1908E12E583BA9105F37 /* Debug */,
+				E29EC111FA64F2159F096E7152671F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8518566DD02E4F024CDAC9106C4AFC9 /* Build configuration list for PBXNativeTarget "Pods-ScrollTopDisplayable_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45C09227F104DB2551CCE9C7D674B6A /* Debug */,
+				074AD67C553B245301F40DE280671180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
