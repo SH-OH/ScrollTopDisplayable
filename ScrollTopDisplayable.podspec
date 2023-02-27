@@ -17,10 +17,6 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
   s.homepage         = 'https://github.com/SH-OH/ScrollTopDisplayable'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -29,8 +25,8 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
-
-  s.source_files = 'ScrollTopDisplayable/Sources/**/*'
+  s.swift_version = '5.0'
+  s.source_files = 'Sources/**/*.swift'
   
   # s.resource_bundles = {
   #   'ScrollTopDisplayable' => ['ScrollTopDisplayable/Assets/*.png']
