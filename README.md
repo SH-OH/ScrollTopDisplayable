@@ -31,8 +31,8 @@ pod 'ScrollTopDisplayable'
 
 ### Swift Package Manager
 
-File > Swift Packages > Add Package Dependency
-Add https://github.com/SH-OH/ScrollTopDisplayable.git
+1. File > Swift Packages > Add Package Dependency
+2. Add https://github.com/SH-OH/ScrollTopDisplayable.git
 
 *OR*
 
