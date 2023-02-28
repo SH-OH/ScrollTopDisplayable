@@ -22,6 +22,6 @@ final class DisplayedView: UIView, ScrollTopDisplayable {
 	override func layoutSubviews() {
 		super.layoutSubviews()
 		
-        config()
+        configure()
 	}
 }

@@ -9,14 +9,14 @@ private var sdScrollTopDisplayableLastContentOffsetY: CGFloat?
 public protocol ScrollTopDisplayable: UIView {
 	
     var configHandler: ((_ viewHeight: CGFloat) -> Void)? { get set }
-    /// Use the `config` function with `configHandler` closure. This method is called once. For example:
+    /// Use the `configure` function with `configHandler` closure. This method is called once. For example:
     ///
     ///     - View: ScrollTopDisplayable
     ///
     ///     override func layoutSubviews() {
     ///         super.layoutSubviews()
     ///
-    ///         config()
+    ///         configure()
     ///     }
     ///
     ///     - ViewController
@@ -32,7 +32,7 @@ public protocol ScrollTopDisplayable: UIView {
     ///            }
     ///        }
     ///    }
-    func config(frameY: CGFloat?, height: CGFloat?)
+    func configure(frameY: CGFloat?, height: CGFloat?)
     
 	func didScroll(_ scrollView: UIScrollView)
     
@@ -42,7 +42,7 @@ public protocol ScrollTopDisplayable: UIView {
 
 public extension ScrollTopDisplayable {
     
-    func config(frameY: CGFloat? = nil, height: CGFloat? = nil) {
+    func configure(frameY: CGFloat? = nil, height: CGFloat? = nil) {
         if let isRendered: Void? = getAssociatedObject(self, &sdScrollTopDisplayableIsRendered), isRendered != nil {
             return
         }
