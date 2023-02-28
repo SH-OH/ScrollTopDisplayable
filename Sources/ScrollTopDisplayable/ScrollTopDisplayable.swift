@@ -20,18 +20,18 @@ public protocol ScrollTopDisplayable: UIView {
     ///     }
     ///
     ///     - ViewController
+    ///     
+    ///     override func viewDidLoad() {
+    ///         super.viewDidLoad()
     ///
-    ///    override func viewDidLoad() {
-    ///        super.viewDidLoad()
-    ///
-    ///        view.configHandler = { [weak self] viewHeight in
-    ///            self?.scrollView.contentInset.top = viewHeight
-    ///            self?.scrollView.contentOffset.y = -viewHeight
-    ///            if #available(iOS 11.1, *) {
-    ///                self?.scrollView.verticalScrollIndicatorInsets.top = viewHeight
-    ///            }
-    ///        }
-    ///    }
+    ///         view.configHandler = { [weak self] viewHeight in
+    ///             self?.scrollView.contentInset.top = viewHeight
+    ///             self?.scrollView.contentOffset.y = -viewHeight
+    ///             if #available(iOS 11.1, *) {
+    ///                 self?.scrollView.verticalScrollIndicatorInsets.top = viewHeight
+    ///             }
+    ///         }
+    ///     }
     func configure(frameY: CGFloat?, height: CGFloat?)
     
 	func didScroll(_ scrollView: UIScrollView)
