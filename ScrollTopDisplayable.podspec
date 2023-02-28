@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ScrollTopDisplayable'
   s.version          = '1.0.1'
-  s.summary          = 'Follow the scroll to show or hide the view at the top.'
+  s.summary          = 'A protocol-based feature that displays or hides the view at the top based on scrolling.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.homepage         = 'https://github.com/SH-OH/ScrollTopDisplayable'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://user-images.githubusercontent.com/50817510/221955138-8a11ea3d-8bfb-42d1-b29c-4234018a1250.mp4'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'SH-OH' => 'dhtkdgh429@gmail.com' }
   s.source           = { :git => 'https://github.com/SH-OH/ScrollTopDisplayable.git', :tag => s.version.to_s }
