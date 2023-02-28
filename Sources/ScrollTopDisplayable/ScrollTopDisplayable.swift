@@ -8,6 +8,8 @@ private var sdScrollTopDisplayableLastContentOffsetY: CGFloat?
 
 public protocol ScrollTopDisplayable: UIView {
 	
+    var isVisible: Bool { get }
+    
     var configHandler: ((_ viewHeight: CGFloat) -> Void)? { get set }
     /// Use the `configure` function with `configHandler` closure. This method is called once. For example:
     ///
@@ -41,6 +43,15 @@ public protocol ScrollTopDisplayable: UIView {
 }
 
 public extension ScrollTopDisplayable {
+    
+    var isVisible: Bool {
+        get {
+            guard let lastContentOffsetY: CGFloat = getAssociatedObject(self, &sdScrollTopDisplayableLastContentOffsetY) ?? 0 else { return true }
+            guard let viewHeight: CGFloat = getAssociatedObject(self, &sdScrollTopDisplayableViewHeight) ?? 0 else { return true }
+            
+            return lastContentOffsetY < viewHeight
+        }
+    }
     
     func configure(frameY: CGFloat? = nil, height: CGFloat? = nil) {
         if let isRendered: Void? = getAssociatedObject(self, &sdScrollTopDisplayableIsRendered), isRendered != nil {
