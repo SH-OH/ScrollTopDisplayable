@@ -1,25 +1,45 @@
 # ScrollTopDisplayable
 
-Follow the scroll to show or hide the view at the top.
+A protocol-based feature that displays or hides the view at the top based on scrolling.
+
+## Preview
+
+https://user-images.githubusercontent.com/50817510/221955138-8a11ea3d-8bfb-42d1-b29c-4234018a1250.mp4
 
 ## Usage
 
+1. Configure to ScrollTopDisplayable View
 ```
-import UIKit
 import ScrollTopDisplayable
 
 class View: UIView, ScrollTopDisplayable {
-
+    
+    var configHandler: ((CGFloat) -> Void)?
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        configure()
+    }
 }
-
-extension View: ScrollTopDisplayable {
-
-    var startFrameY: CGFloat { 0 }
-    var viewHeight: CGFloat { 50.0 }
-}
-
 ```
-
+2. Configure `scrollView` in ViewController
+```
+view.configHandler = { [weak self] viewHeight in
+    self?.scrollView.contentInset.top = viewHeight
+    self?.scrollView.contentOffset.y = -viewHeight
+    if #available(iOS 11.1, *) {
+        self?.scrollView.verticalScrollIndicatorInsets.top = viewHeight
+    }
+}
+```
+```
+extension ViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        view.didScroll(scrollView)
+    }
+}
+```
 
 ## Installation
 
