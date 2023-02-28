@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.homepage         = 'https://github.com/SH-OH/ScrollTopDisplayable'
-  s.screenshots     = 'https://user-images.githubusercontent.com/50817510/221955138-8a11ea3d-8bfb-42d1-b29c-4234018a1250.mp4'
+#  s.screenshots     = 'https://user-images.githubusercontent.com/50817510/221955138-8a11ea3d-8bfb-42d1-b29c-4234018a1250.mp4'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'SH-OH' => 'dhtkdgh429@gmail.com' }
   s.source           = { :git => 'https://github.com/SH-OH/ScrollTopDisplayable.git', :tag => s.version.to_s }
