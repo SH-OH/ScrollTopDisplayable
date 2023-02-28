@@ -13,25 +13,19 @@ class ViewController: UIViewController {
 	@IBOutlet private weak var tableView: UITableView!
 	@IBOutlet private weak var displayedTopView: DisplayedView!
 	
-	private lazy var datas: [String] = (0..<200).map(String.init)
-	
+    private lazy var datas: [String] = (0..<200).map(String.init)
+    
 	override func viewDidLoad() {
         super.viewDidLoad()
         
-		displayedTopView.frameLayoutHandler = { [weak self] in
-			self?.tableView.contentInset.top = $0
+		displayedTopView.configHandler = { [weak self] viewHeight in
+			self?.tableView.contentInset.top = viewHeight
+            self?.tableView.contentOffset.y = -viewHeight
 			if #available(iOS 11.1, *) {
-				self?.tableView.verticalScrollIndicatorInsets.top = $0
-			}
+				self?.tableView.verticalScrollIndicatorInsets.top = viewHeight
+            }
 		}
     }
-	
-	
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
-		
-		print(tableView.contentInset)
-	}
 	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -46,7 +40,6 @@ extension ViewController: UIScrollViewDelegate {
 }
 
 extension ViewController: UITableViewDataSource {
-	
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		datas.count

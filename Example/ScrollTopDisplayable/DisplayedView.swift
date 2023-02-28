@@ -10,14 +10,9 @@ import UIKit
 import ScrollTopDisplayable
 
 final class DisplayedView: UIView, ScrollTopDisplayable {
-	
-	private var isFirstRendering: Bool = true
-	
-	private(set) var startFrameY: CGFloat = 0
-	private(set) var viewHeight: CGFloat = 0
-	
-	var frameLayoutHandler: ((CGFloat) -> Void)?
-	
+    
+	var configHandler: ((CGFloat) -> Void)?
+    
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		
@@ -27,14 +22,6 @@ final class DisplayedView: UIView, ScrollTopDisplayable {
 	override func layoutSubviews() {
 		super.layoutSubviews()
 		
-		if isFirstRendering {
-			startFrameY = frame.origin.y
-			viewHeight = frame.height
-			frameLayoutHandler?(viewHeight)
-			isFirstRendering = false
-			print("2. \(frame)")
-		}
-		
-//		syncPreviousFrameY()
+        config()
 	}
 }
