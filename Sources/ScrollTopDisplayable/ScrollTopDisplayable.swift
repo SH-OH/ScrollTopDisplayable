@@ -1,29 +1,70 @@
 import UIKit
 
-private var sdScrollTopDisplayableLastContentOffsetY: CGFloat?
+private var sdScrollTopDisplayableIsRendered: Void?
+private var sdScrollTopDisplayableViewHeight: CGFloat?
+private var sdScrollTopDisplayableStartFrameY: CGFloat?
 private var sdScrollTopDisplayablePrevieousFrameY: CGFloat?
+private var sdScrollTopDisplayableLastContentOffsetY: CGFloat?
 
 public protocol ScrollTopDisplayable: UIView {
 	
-	/// layouted view first frame Y.
-	var startFrameY: CGFloat { get }
-	/// layouted frame height.
-	var viewHeight: CGFloat { get }
-	
+    var configHandler: ((_ viewHeight: CGFloat) -> Void)? { get set }
+    /// Use the `config` function with `configHandler` closure. This method is called once. For example:
+    ///
+    ///     - View: ScrollTopDisplayable
+    ///
+    ///     override func layoutSubviews() {
+    ///         super.layoutSubviews()
+    ///
+    ///         config()
+    ///     }
+    ///
+    ///     - ViewController
+    ///
+    ///    override func viewDidLoad() {
+    ///        super.viewDidLoad()
+    ///
+    ///        view.configHandler = { [weak self] viewHeight in
+    ///            self?.scrollView.contentInset.top = viewHeight
+    ///            self?.scrollView.contentOffset.y = -viewHeight
+    ///            if #available(iOS 11.1, *) {
+    ///                self?.scrollView.verticalScrollIndicatorInsets.top = viewHeight
+    ///            }
+    ///        }
+    ///    }
+    func config(frameY: CGFloat?, height: CGFloat?)
+    
 	func didScroll(_ scrollView: UIScrollView)
-	/// If layout of the view update, recommends sync on layoutSubviews.
+    
+	/// Use 'syncPreviousFrameY' function on `layoutSubviews`, if forced to update layouts.
 	func syncPreviousFrameY()
 }
 
 public extension ScrollTopDisplayable {
-	
+    
+    func config(frameY: CGFloat? = nil, height: CGFloat? = nil) {
+        if let isRendered: Void? = getAssociatedObject(self, &sdScrollTopDisplayableIsRendered), isRendered != nil {
+            return
+        }
+        
+        let viewHeight = frame.height
+        
+        setRetainedAssociatedObject(self, &sdScrollTopDisplayableViewHeight, viewHeight)
+        setRetainedAssociatedObject(self, &sdScrollTopDisplayableStartFrameY, frame.origin.y)
+        setRetainedAssociatedObject(self, &sdScrollTopDisplayableIsRendered, ())
+        
+        configHandler?(viewHeight)
+    }
+    
 	func didScroll(_ scrollView: UIScrollView) {
 		let lastContentOffsetY: CGFloat = getAssociatedObject(self, &sdScrollTopDisplayableLastContentOffsetY) ?? 0
-		let previousFrameY: CGFloat = getAssociatedObject(self, &sdScrollTopDisplayablePrevieousFrameY) ?? 0
+        let viewHeight: CGFloat = getAssociatedObject(self, &sdScrollTopDisplayableViewHeight) ?? 0
+        let startFrameY: CGFloat = getAssociatedObject(self, &sdScrollTopDisplayableStartFrameY) ?? 0
+		let previousFrameY: CGFloat = getAssociatedObject(self, &sdScrollTopDisplayablePrevieousFrameY) ?? startFrameY
 		let verticalDirection = scrollView.verticalDirection
 		let contentOffsetY = scrollView.contentOffset.y + viewHeight
 		let diffY = lastContentOffsetY - contentOffsetY
-		
+        
 		defer {
 			setRetainedAssociatedObject(self, &sdScrollTopDisplayableLastContentOffsetY, contentOffsetY)
 		}
@@ -36,9 +77,9 @@ public extension ScrollTopDisplayable {
 		case .up:
 			guard contentOffsetY > 0 else { break }
 			
-			if !previousFrameY.isZero, frame.origin.y > previousFrameY {
+			if frame.origin.y > previousFrameY {
 				frame.origin.y = previousFrameY
-			}// 97 > 0 >>> y = 0
+			}
 			
 			frame.origin.y += diffY
 			
@@ -48,7 +89,7 @@ public extension ScrollTopDisplayable {
 			}
 			
 			setRetainedAssociatedObject(self, &sdScrollTopDisplayablePrevieousFrameY, frame.origin.y)
-			
+            
 		case .down:
 			guard lastContentOffsetY >= contentOffsetY else { break }
 			
@@ -59,7 +100,7 @@ public extension ScrollTopDisplayable {
 			}
 			
 			setRetainedAssociatedObject(self, &sdScrollTopDisplayablePrevieousFrameY, frame.origin.y)
-			
+            
 		case .none:
 			break
 		}
