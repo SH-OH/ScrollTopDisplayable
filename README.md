@@ -4,7 +4,7 @@ A protocol-based feature that displays or hides the view at the top based on scr
 
 ## Preview
 
-https://user-images.githubusercontent.com/50817510/221947030-c92f69b1-3e2a-4162-acd6-fb16b94cc514.mp4
+https://user-images.githubusercontent.com/50817510/221955138-8a11ea3d-8bfb-42d1-b29c-4234018a1250.mp4
 
 ## Usage
 
