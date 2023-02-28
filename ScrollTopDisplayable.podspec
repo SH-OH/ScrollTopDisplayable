@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ScrollTopDisplayable'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Follow the scroll to show or hide the view at the top.'
 
 # This description is used to generate tags and improve search results.
